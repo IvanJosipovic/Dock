@@ -98,8 +98,7 @@ Class SplitViewDock  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataContract(IsReference = true)]
-public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvider, ILogical, IThemeVariantHost, IResourceHost, IResourceNode, IStyleHost, ISetLogicalParent, ISetInheritanceParent, ISupportInitialize, IStyleable, INamed, IDockSelectorInfo, ISplitViewDock, IDock, IDockable, IControlRecyclingIdProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvider, ILogical, IThemeVariantHost, IResourceHost, IResourceNode, IStyleHost, ISetLogicalParent, ISetInheritanceParent, ISupportInitialize, IStyleable, INamed, IDockSelectorInfo, ISplitViewDock, IDock, IDockable, IControlRecyclingIdProvider</code></pre>
   </div>
 
 
@@ -285,6 +284,9 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
       <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDropProperty">DockableBase.CanDropProperty</a>
     </div>
     <div>
+      <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDockAsDocumentProperty">DockableBase.CanDockAsDocumentProperty</a>
+    </div>
+    <div>
       <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_IsModifiedProperty">DockableBase.IsModifiedProperty</a>
     </div>
     <div>
@@ -385,6 +387,9 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
     </div>
     <div>
       <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDrop">DockableBase.CanDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDockAsDocument">DockableBase.CanDockAsDocument</a>
     </div>
     <div>
       <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_IsModified">DockableBase.IsModified</a>
@@ -713,6 +718,9 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
       <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanClose__1___0_System_Boolean_">FluentExtensions.WithCanClose&lt;T&gt;(T, bool)</a>
   </div>
   <div>
+      <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDockAsDocument__1___0_System_Boolean_">FluentExtensions.WithCanDockAsDocument&lt;T&gt;(T, bool)</a>
+  </div>
+  <div>
       <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDrag__1___0_System_Boolean_">FluentExtensions.WithCanDrag&lt;T&gt;(T, bool)</a>
   </div>
   <div>
@@ -840,7 +848,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock__ctor" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.#ctor">
   SplitViewDock()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes new instance of the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html">SplitViewDock</a> class.</p>
@@ -870,7 +878,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_CompactPaneLengthProperty" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.CompactPaneLengthProperty">
   CompactPaneLengthProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html#Dock_Model_Avalonia_Controls_SplitViewDock_CompactPaneLength">CompactPaneLength</a> property.</p>
@@ -901,7 +909,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_ContentDockableProperty" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.ContentDockableProperty">
   ContentDockableProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html#Dock_Model_Avalonia_Controls_SplitViewDock_ContentDockable">ContentDockable</a> property.</p>
@@ -932,7 +940,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_DisplayModeProperty" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.DisplayModeProperty">
   DisplayModeProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html#Dock_Model_Avalonia_Controls_SplitViewDock_DisplayMode">DisplayMode</a> property.</p>
@@ -963,7 +971,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_IsPaneOpenProperty" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.IsPaneOpenProperty">
   IsPaneOpenProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html#Dock_Model_Avalonia_Controls_SplitViewDock_IsPaneOpen">IsPaneOpen</a> property.</p>
@@ -994,7 +1002,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_OpenPaneLengthProperty" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.OpenPaneLengthProperty">
   OpenPaneLengthProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html#Dock_Model_Avalonia_Controls_SplitViewDock_OpenPaneLength">OpenPaneLength</a> property.</p>
@@ -1025,7 +1033,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_PaneDockableProperty" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.PaneDockableProperty">
   PaneDockableProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html#Dock_Model_Avalonia_Controls_SplitViewDock_PaneDockable">PaneDockable</a> property.</p>
@@ -1056,7 +1064,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_PanePlacementProperty" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.PanePlacementProperty">
   PanePlacementProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html#Dock_Model_Avalonia_Controls_SplitViewDock_PanePlacement">PanePlacement</a> property.</p>
@@ -1087,7 +1095,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_UseLightDismissOverlayModeProperty" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.UseLightDismissOverlayModeProperty">
   UseLightDismissOverlayModeProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.SplitViewDock.html#Dock_Model_Avalonia_Controls_SplitViewDock_UseLightDismissOverlayMode">UseLightDismissOverlayMode</a> property.</p>
@@ -1123,7 +1131,7 @@ public class SplitViewDock : DockBase, INotifyPropertyChanged, IDataContextProvi
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_CompactPaneLength" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.CompactPaneLength">
   CompactPaneLength
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the width of the pane when closed in compact display modes.</p>
@@ -1163,7 +1171,7 @@ Default value is 48.</p>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_ContentDockable" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.ContentDockable">
   ContentDockable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the dockable displayed in the content area.
@@ -1198,7 +1206,7 @@ public IDockable? ContentDockable { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_DisplayMode" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.DisplayMode">
   DisplayMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets how the pane is displayed in both open and closed states.</p>
@@ -1232,7 +1240,7 @@ public SplitViewDisplayMode DisplayMode { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_IsPaneOpen" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.IsPaneOpen">
   IsPaneOpen
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets whether the pane is currently open.</p>
@@ -1266,7 +1274,7 @@ public bool IsPaneOpen { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_OpenPaneLength" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.OpenPaneLength">
   OpenPaneLength
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the width of the pane when it is open.</p>
@@ -1303,7 +1311,7 @@ public double OpenPaneLength { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_PaneDockable" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.PaneDockable">
   PaneDockable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the dockable displayed in the pane area.
@@ -1338,7 +1346,7 @@ public IDockable? PaneDockable { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_PanePlacement" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.PanePlacement">
   PanePlacement
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the position of the pane (Left, Right, Top, or Bottom).</p>
@@ -1372,7 +1380,7 @@ public SplitViewPanePlacement PanePlacement { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_UseLightDismissOverlayMode" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.UseLightDismissOverlayMode">
   UseLightDismissOverlayMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets whether to use light dismiss overlay mode.
@@ -1412,7 +1420,7 @@ public bool UseLightDismissOverlayMode { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_ClosePane" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.ClosePane">
   ClosePane()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Closes the pane.</p>
@@ -1439,7 +1447,7 @@ public bool UseLightDismissOverlayMode { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_OpenPane" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.OpenPane">
   OpenPane()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Opens the pane.</p>
@@ -1466,7 +1474,7 @@ public bool UseLightDismissOverlayMode { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_SplitViewDock_TogglePane" data-uid="Dock.Model.Avalonia.Controls.SplitViewDock.TogglePane">
   TogglePane()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/SplitViewDock.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Toggles the pane open/closed state.</p>

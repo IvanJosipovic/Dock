@@ -98,8 +98,7 @@ Class DockableBase  <a class="header-action link-secondary" title="View source" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataContract(IsReference = true)]
-public abstract class DockableBase : ReactiveBase, INotifyPropertyChanged, INotifyPropertyChanging, IDockable, IControlRecyclingIdProvider, IDockSelectorInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class DockableBase : ReactiveBase, INotifyPropertyChanged, INotifyPropertyChanging, IDockable, IControlRecyclingIdProvider, IDockSelectorInfo</code></pre>
   </div>
 
 
@@ -216,6 +215,9 @@ public abstract class DockableBase : ReactiveBase, INotifyPropertyChanged, INoti
     <dd>
   <div>
       <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanClose__1___0_System_Boolean_">FluentExtensions.WithCanClose&lt;T&gt;(T, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDockAsDocument__1___0_System_Boolean_">FluentExtensions.WithCanDockAsDocument&lt;T&gt;(T, bool)</a>
   </div>
   <div>
       <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDrag__1___0_System_Boolean_">FluentExtensions.WithCanDrag&lt;T&gt;(T, bool)</a>
@@ -344,6 +346,39 @@ public abstract class DockableBase : ReactiveBase, INotifyPropertyChanged, INoti
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[DataMember(IsRequired = false, EmitDefaultValue = true)]
 public bool CanClose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dock_Model_Mvvm_Core_DockableBase_CanDockAsDocument_" data-uid="Dock.Model.Mvvm.Core.DockableBase.CanDockAsDocument*"></a>
+
+  <h3 id="Dock_Model_Mvvm_Core_DockableBase_CanDockAsDocument" data-uid="Dock.Model.Mvvm.Core.DockableBase.CanDockAsDocument">
+  CanDockAsDocument
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets if the dockable can be docked as a document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(IsRequired = false, EmitDefaultValue = true)]
+public bool CanDockAsDocument { get; set; }</code></pre>
   </div>
 
 
@@ -664,7 +699,7 @@ public DockMode Dock { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_DockGroup" data-uid="Dock.Model.Mvvm.Core.DockableBase.DockGroup">
   DockGroup
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L281"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the docking group identifier.
@@ -832,7 +867,7 @@ public bool IsEmpty { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_IsModified" data-uid="Dock.Model.Mvvm.Core.DockableBase.IsModified">
   IsModified
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L273"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets whether the dockable has unsaved changes.</p>
@@ -1228,7 +1263,7 @@ public int RowSpan { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_SelectorTitle" data-uid="Dock.Model.Mvvm.Core.DockableBase.SelectorTitle">
   SelectorTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the text displayed in the selector.</p>
@@ -1261,7 +1296,7 @@ public string? SelectorTitle { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_ShowInSelector" data-uid="Dock.Model.Mvvm.Core.DockableBase.ShowInSelector">
   ShowInSelector
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets whether this dockable appears in the selector.</p>
@@ -1331,7 +1366,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_GetControlRecyclingId" data-uid="Dock.Model.Mvvm.Core.DockableBase.GetControlRecyclingId">
   GetControlRecyclingId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L305"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1362,7 +1397,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_GetPinnedBounds_System_Double__System_Double__System_Double__System_Double__" data-uid="Dock.Model.Mvvm.Core.DockableBase.GetPinnedBounds(System.Double@,System.Double@,System.Double@,System.Double@)">
   GetPinnedBounds(out double, out double, out double, out double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets dockable pinned bounds information used for tracking.</p>
@@ -1404,7 +1439,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_GetPointerPosition_System_Double__System_Double__" data-uid="Dock.Model.Mvvm.Core.DockableBase.GetPointerPosition(System.Double@,System.Double@)">
   GetPointerPosition(out double, out double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets dockable pointer position used for tracking.</p>
@@ -1440,7 +1475,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_GetPointerScreenPosition_System_Double__System_Double__" data-uid="Dock.Model.Mvvm.Core.DockableBase.GetPointerScreenPosition(System.Double@,System.Double@)">
   GetPointerScreenPosition(out double, out double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets dockable pointer screen position used for tracking.</p>
@@ -1476,7 +1511,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_GetTabBounds_System_Double__System_Double__System_Double__System_Double__" data-uid="Dock.Model.Mvvm.Core.DockableBase.GetTabBounds(System.Double@,System.Double@,System.Double@,System.Double@)">
   GetTabBounds(out double, out double, out double, out double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets dockable tab bounds information used for tracking.</p>
@@ -1518,7 +1553,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_GetVisibleBounds_System_Double__System_Double__System_Double__System_Double__" data-uid="Dock.Model.Mvvm.Core.DockableBase.GetVisibleBounds(System.Double@,System.Double@,System.Double@,System.Double@)">
   GetVisibleBounds(out double, out double, out double, out double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L319"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets dockable visible bounds information used for tracking.</p>
@@ -1560,7 +1595,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_OnClose" data-uid="Dock.Model.Mvvm.Core.DockableBase.OnClose">
   OnClose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the dockable is closed.</p>
@@ -1593,7 +1628,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_OnPinnedBoundsChanged_System_Double_System_Double_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.OnPinnedBoundsChanged(System.Double,System.Double,System.Double,System.Double)">
   OnPinnedBoundsChanged(double, double, double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when dockable pinned bounds changed.</p>
@@ -1635,7 +1670,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_OnPointerPositionChanged_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.OnPointerPositionChanged(System.Double,System.Double)">
   OnPointerPositionChanged(double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when dockable pointer position changed.</p>
@@ -1671,7 +1706,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_OnPointerScreenPositionChanged_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.OnPointerScreenPositionChanged(System.Double,System.Double)">
   OnPointerScreenPositionChanged(double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when dockable pointer screen position changed.</p>
@@ -1707,7 +1742,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_OnSelected" data-uid="Dock.Model.Mvvm.Core.DockableBase.OnSelected">
   OnSelected()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the dockable becomes the selected dockable.</p>
@@ -1734,7 +1769,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_OnTabBoundsChanged_System_Double_System_Double_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.OnTabBoundsChanged(System.Double,System.Double,System.Double,System.Double)">
   OnTabBoundsChanged(double, double, double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L368"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when dockable tab bounds changed.</p>
@@ -1776,7 +1811,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_OnVisibleBoundsChanged_System_Double_System_Double_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.OnVisibleBoundsChanged(System.Double,System.Double,System.Double,System.Double)">
   OnVisibleBoundsChanged(double, double, double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when dockable visible bounds changed.</p>
@@ -1818,7 +1853,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_SetPinnedBounds_System_Double_System_Double_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.SetPinnedBounds(System.Double,System.Double,System.Double,System.Double)">
   SetPinnedBounds(double, double, double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L343"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets dockable pinned bounds information used for tracking.</p>
@@ -1860,7 +1895,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_SetPointerPosition_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.SetPointerPosition(System.Double,System.Double)">
   SetPointerPosition(double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets dockable pointer position used for tracking.</p>
@@ -1896,7 +1931,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_SetPointerScreenPosition_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.SetPointerScreenPosition(System.Double,System.Double)">
   SetPointerScreenPosition(double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets dockable pointer screen position used for tracking.</p>
@@ -1932,7 +1967,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_SetTabBounds_System_Double_System_Double_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.SetTabBounds(System.Double,System.Double,System.Double,System.Double)">
   SetTabBounds(double, double, double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L361"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets dockable tab bounds information used for tracking.</p>
@@ -1974,7 +2009,7 @@ public string Title { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Mvvm_Core_DockableBase_SetVisibleBounds_System_Double_System_Double_System_Double_System_Double_" data-uid="Dock.Model.Mvvm.Core.DockableBase.SetVisibleBounds(System.Double,System.Double,System.Double,System.Double)">
   SetVisibleBounds(double, double, double, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Mvvm/Core/DockableBase.cs/#L325"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets dockable visible bounds information used for tracking.</p>

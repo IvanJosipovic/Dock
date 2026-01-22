@@ -98,8 +98,7 @@ Class ProportionalDockSplitter  <a class="header-action link-secondary" title="V
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataContract(IsReference = true)]
-public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataContextProvider, ILogical, IThemeVariantHost, IResourceHost, IResourceNode, IStyleHost, ISetLogicalParent, ISetInheritanceParent, ISupportInitialize, IStyleable, INamed, IDockSelectorInfo, IDock, IProportionalDockSplitter, ISplitter, IDockable, IControlRecyclingIdProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataContextProvider, ILogical, IThemeVariantHost, IResourceHost, IResourceNode, IStyleHost, ISetLogicalParent, ISetInheritanceParent, ISupportInitialize, IStyleable, INamed, IDockSelectorInfo, IDock, IProportionalDockSplitter, ISplitter, IDockable, IControlRecyclingIdProvider</code></pre>
   </div>
 
 
@@ -286,6 +285,9 @@ public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataC
       <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDropProperty">DockableBase.CanDropProperty</a>
     </div>
     <div>
+      <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDockAsDocumentProperty">DockableBase.CanDockAsDocumentProperty</a>
+    </div>
+    <div>
       <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_IsModifiedProperty">DockableBase.IsModifiedProperty</a>
     </div>
     <div>
@@ -386,6 +388,9 @@ public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataC
     </div>
     <div>
       <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDrop">DockableBase.CanDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDockAsDocument">DockableBase.CanDockAsDocument</a>
     </div>
     <div>
       <a class="xref" href="Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_IsModified">DockableBase.IsModified</a>
@@ -714,6 +719,9 @@ public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataC
       <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanClose__1___0_System_Boolean_">FluentExtensions.WithCanClose&lt;T&gt;(T, bool)</a>
   </div>
   <div>
+      <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDockAsDocument__1___0_System_Boolean_">FluentExtensions.WithCanDockAsDocument&lt;T&gt;(T, bool)</a>
+  </div>
+  <div>
       <a class="xref" href="Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDrag__1___0_System_Boolean_">FluentExtensions.WithCanDrag&lt;T&gt;(T, bool)</a>
   </div>
   <div>
@@ -823,7 +831,7 @@ public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataC
 
   <h3 id="Dock_Model_Avalonia_Controls_ProportionalDockSplitter__ctor" data-uid="Dock.Model.Avalonia.Controls.ProportionalDockSplitter.#ctor">
   ProportionalDockSplitter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes new instance of the <a class="xref" href="Dock.Model.Avalonia.Controls.ProportionalDockSplitter.html">ProportionalDockSplitter</a> class.</p>
@@ -853,7 +861,7 @@ public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataC
 
   <h3 id="Dock_Model_Avalonia_Controls_ProportionalDockSplitter_CanResizeProperty" data-uid="Dock.Model.Avalonia.Controls.ProportionalDockSplitter.CanResizeProperty">
   CanResizeProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.ProportionalDockSplitter.html#Dock_Model_Avalonia_Controls_ProportionalDockSplitter_CanResize">CanResize</a> property.</p>
@@ -884,7 +892,7 @@ public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataC
 
   <h3 id="Dock_Model_Avalonia_Controls_ProportionalDockSplitter_ResizePreviewProperty" data-uid="Dock.Model.Avalonia.Controls.ProportionalDockSplitter.ResizePreviewProperty">
   ResizePreviewProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Model.Avalonia.Controls.ProportionalDockSplitter.html#Dock_Model_Avalonia_Controls_ProportionalDockSplitter_ResizePreview">ResizePreview</a> property.</p>
@@ -920,7 +928,7 @@ public class ProportionalDockSplitter : DockBase, INotifyPropertyChanged, IDataC
 
   <h3 id="Dock_Model_Avalonia_Controls_ProportionalDockSplitter_CanResize" data-uid="Dock.Model.Avalonia.Controls.ProportionalDockSplitter.CanResize">
   CanResize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets whether the splitter allows resizing.</p>
@@ -954,7 +962,7 @@ public bool CanResize { get; set; }</code></pre>
 
   <h3 id="Dock_Model_Avalonia_Controls_ProportionalDockSplitter_ResizePreview" data-uid="Dock.Model.Avalonia.Controls.ProportionalDockSplitter.ResizePreview">
   ResizePreview
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Model.Avalonia/Controls/ProportionalDockSplitter.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets whether resizing occurs only after the pointer is released.

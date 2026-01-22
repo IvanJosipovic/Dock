@@ -2113,6 +2113,63 @@ references:
   commentId: F:Dock.Avalonia.Controls.DragPreviewControl.ContentTemplateProperty
   fullName: Dock.Avalonia.Controls.DragPreviewControl.ContentTemplateProperty
   nameWithType: DragPreviewControl.ContentTemplateProperty
+- uid: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeight
+  name: PreviewContentHeight
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContentHeight
+  commentId: P:Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeight
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeight
+  nameWithType: DragPreviewControl.PreviewContentHeight
+- uid: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeight*
+  name: PreviewContentHeight
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContentHeight_
+  commentId: Overload:Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeight
+  isSpec: "True"
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeight
+  nameWithType: DragPreviewControl.PreviewContentHeight
+- uid: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeightProperty
+  name: PreviewContentHeightProperty
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContentHeightProperty
+  commentId: F:Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeightProperty
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeightProperty
+  nameWithType: DragPreviewControl.PreviewContentHeightProperty
+- uid: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidth
+  name: PreviewContentWidth
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContentWidth
+  commentId: P:Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidth
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidth
+  nameWithType: DragPreviewControl.PreviewContentWidth
+- uid: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidth*
+  name: PreviewContentWidth
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContentWidth_
+  commentId: Overload:Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidth
+  isSpec: "True"
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidth
+  nameWithType: DragPreviewControl.PreviewContentWidth
+- uid: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidthProperty
+  name: PreviewContentWidthProperty
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContentWidthProperty
+  commentId: F:Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidthProperty
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidthProperty
+  nameWithType: DragPreviewControl.PreviewContentWidthProperty
+- uid: Dock.Avalonia.Controls.DragPreviewControl.ShowContent
+  name: ShowContent
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_ShowContent
+  commentId: P:Dock.Avalonia.Controls.DragPreviewControl.ShowContent
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.ShowContent
+  nameWithType: DragPreviewControl.ShowContent
+- uid: Dock.Avalonia.Controls.DragPreviewControl.ShowContent*
+  name: ShowContent
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_ShowContent_
+  commentId: Overload:Dock.Avalonia.Controls.DragPreviewControl.ShowContent
+  isSpec: "True"
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.ShowContent
+  nameWithType: DragPreviewControl.ShowContent
+- uid: Dock.Avalonia.Controls.DragPreviewControl.ShowContentProperty
+  name: ShowContentProperty
+  href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_ShowContentProperty
+  commentId: F:Dock.Avalonia.Controls.DragPreviewControl.ShowContentProperty
+  fullName: Dock.Avalonia.Controls.DragPreviewControl.ShowContentProperty
+  nameWithType: DragPreviewControl.ShowContentProperty
 - uid: Dock.Avalonia.Controls.DragPreviewControl.Status
   name: Status
   href: api/Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_Status
@@ -10992,6 +11049,25 @@ references:
   commentId: F:Dock.Model.Avalonia.Core.DockableBase.CanCloseProperty
   fullName: Dock.Model.Avalonia.Core.DockableBase.CanCloseProperty
   nameWithType: DockableBase.CanCloseProperty
+- uid: Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocument
+  name: CanDockAsDocument
+  href: api/Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDockAsDocument
+  commentId: P:Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocument
+  fullName: Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
+- uid: Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocument*
+  name: CanDockAsDocument
+  href: api/Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDockAsDocument_
+  commentId: Overload:Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
+- uid: Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocumentProperty
+  name: CanDockAsDocumentProperty
+  href: api/Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDockAsDocumentProperty
+  commentId: F:Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocumentProperty
+  fullName: Dock.Model.Avalonia.Core.DockableBase.CanDockAsDocumentProperty
+  nameWithType: DockableBase.CanDockAsDocumentProperty
 - uid: Dock.Model.Avalonia.Core.DockableBase.CanDrag
   name: CanDrag
   href: api/Dock.Model.Avalonia.Core.DockableBase.html#Dock_Model_Avalonia_Core_DockableBase_CanDrag
@@ -13821,6 +13897,19 @@ references:
   isSpec: "True"
   fullName: Dock.Model.CaliburMicro.Core.DockableBase.CanClose
   nameWithType: DockableBase.CanClose
+- uid: Dock.Model.CaliburMicro.Core.DockableBase.CanDockAsDocument
+  name: CanDockAsDocument
+  href: api/Dock.Model.CaliburMicro.Core.DockableBase.html#Dock_Model_CaliburMicro_Core_DockableBase_CanDockAsDocument
+  commentId: P:Dock.Model.CaliburMicro.Core.DockableBase.CanDockAsDocument
+  fullName: Dock.Model.CaliburMicro.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
+- uid: Dock.Model.CaliburMicro.Core.DockableBase.CanDockAsDocument*
+  name: CanDockAsDocument
+  href: api/Dock.Model.CaliburMicro.Core.DockableBase.html#Dock_Model_CaliburMicro_Core_DockableBase_CanDockAsDocument_
+  commentId: Overload:Dock.Model.CaliburMicro.Core.DockableBase.CanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.CaliburMicro.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
 - uid: Dock.Model.CaliburMicro.Core.DockableBase.CanDrag
   name: CanDrag
   href: api/Dock.Model.CaliburMicro.Core.DockableBase.html#Dock_Model_CaliburMicro_Core_DockableBase_CanDrag
@@ -18802,6 +18891,19 @@ references:
   isSpec: "True"
   fullName: Dock.Model.Core.IDockable.CanClose
   nameWithType: IDockable.CanClose
+- uid: Dock.Model.Core.IDockable.CanDockAsDocument
+  name: CanDockAsDocument
+  href: api/Dock.Model.Core.IDockable.html#Dock_Model_Core_IDockable_CanDockAsDocument
+  commentId: P:Dock.Model.Core.IDockable.CanDockAsDocument
+  fullName: Dock.Model.Core.IDockable.CanDockAsDocument
+  nameWithType: IDockable.CanDockAsDocument
+- uid: Dock.Model.Core.IDockable.CanDockAsDocument*
+  name: CanDockAsDocument
+  href: api/Dock.Model.Core.IDockable.html#Dock_Model_Core_IDockable_CanDockAsDocument_
+  commentId: Overload:Dock.Model.Core.IDockable.CanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.Core.IDockable.CanDockAsDocument
+  nameWithType: IDockable.CanDockAsDocument
 - uid: Dock.Model.Core.IDockable.CanDrag
   name: CanDrag
   href: api/Dock.Model.Core.IDockable.html#Dock_Model_Core_IDockable_CanDrag
@@ -24669,6 +24771,22 @@ references:
   isSpec: "True"
   fullName: Dock.Model.FluentExtensions.WithCanCreateDocument
   nameWithType: FluentExtensions.WithCanCreateDocument
+- uid: Dock.Model.FluentExtensions.WithCanDockAsDocument*
+  name: WithCanDockAsDocument
+  href: api/Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDockAsDocument_
+  commentId: Overload:Dock.Model.FluentExtensions.WithCanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.FluentExtensions.WithCanDockAsDocument
+  nameWithType: FluentExtensions.WithCanDockAsDocument
+- uid: Dock.Model.FluentExtensions.WithCanDockAsDocument``1(``0,System.Boolean)
+  name: WithCanDockAsDocument<T>(T, bool)
+  href: api/Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDockAsDocument__1___0_System_Boolean_
+  commentId: M:Dock.Model.FluentExtensions.WithCanDockAsDocument``1(``0,System.Boolean)
+  name.vb: WithCanDockAsDocument(Of T)(T, Boolean)
+  fullName: Dock.Model.FluentExtensions.WithCanDockAsDocument<T>(T, bool)
+  fullName.vb: Dock.Model.FluentExtensions.WithCanDockAsDocument(Of T)(T, Boolean)
+  nameWithType: FluentExtensions.WithCanDockAsDocument<T>(T, bool)
+  nameWithType.vb: FluentExtensions.WithCanDockAsDocument(Of T)(T, Boolean)
 - uid: Dock.Model.FluentExtensions.WithCanDrag*
   name: WithCanDrag
   href: api/Dock.Model.FluentExtensions.html#Dock_Model_FluentExtensions_WithCanDrag_
@@ -27242,6 +27360,19 @@ references:
   isSpec: "True"
   fullName: Dock.Model.Inpc.Core.DockableBase.CanClose
   nameWithType: DockableBase.CanClose
+- uid: Dock.Model.Inpc.Core.DockableBase.CanDockAsDocument
+  name: CanDockAsDocument
+  href: api/Dock.Model.Inpc.Core.DockableBase.html#Dock_Model_Inpc_Core_DockableBase_CanDockAsDocument
+  commentId: P:Dock.Model.Inpc.Core.DockableBase.CanDockAsDocument
+  fullName: Dock.Model.Inpc.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
+- uid: Dock.Model.Inpc.Core.DockableBase.CanDockAsDocument*
+  name: CanDockAsDocument
+  href: api/Dock.Model.Inpc.Core.DockableBase.html#Dock_Model_Inpc_Core_DockableBase_CanDockAsDocument_
+  commentId: Overload:Dock.Model.Inpc.Core.DockableBase.CanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.Inpc.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
 - uid: Dock.Model.Inpc.Core.DockableBase.CanDrag
   name: CanDrag
   href: api/Dock.Model.Inpc.Core.DockableBase.html#Dock_Model_Inpc_Core_DockableBase_CanDrag
@@ -29913,6 +30044,19 @@ references:
   isSpec: "True"
   fullName: Dock.Model.Mvvm.Core.DockableBase.CanClose
   nameWithType: DockableBase.CanClose
+- uid: Dock.Model.Mvvm.Core.DockableBase.CanDockAsDocument
+  name: CanDockAsDocument
+  href: api/Dock.Model.Mvvm.Core.DockableBase.html#Dock_Model_Mvvm_Core_DockableBase_CanDockAsDocument
+  commentId: P:Dock.Model.Mvvm.Core.DockableBase.CanDockAsDocument
+  fullName: Dock.Model.Mvvm.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
+- uid: Dock.Model.Mvvm.Core.DockableBase.CanDockAsDocument*
+  name: CanDockAsDocument
+  href: api/Dock.Model.Mvvm.Core.DockableBase.html#Dock_Model_Mvvm_Core_DockableBase_CanDockAsDocument_
+  commentId: Overload:Dock.Model.Mvvm.Core.DockableBase.CanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.Mvvm.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
 - uid: Dock.Model.Mvvm.Core.DockableBase.CanDrag
   name: CanDrag
   href: api/Dock.Model.Mvvm.Core.DockableBase.html#Dock_Model_Mvvm_Core_DockableBase_CanDrag
@@ -32381,6 +32525,19 @@ references:
   isSpec: "True"
   fullName: Dock.Model.Prism.Core.DockableBase.CanClose
   nameWithType: DockableBase.CanClose
+- uid: Dock.Model.Prism.Core.DockableBase.CanDockAsDocument
+  name: CanDockAsDocument
+  href: api/Dock.Model.Prism.Core.DockableBase.html#Dock_Model_Prism_Core_DockableBase_CanDockAsDocument
+  commentId: P:Dock.Model.Prism.Core.DockableBase.CanDockAsDocument
+  fullName: Dock.Model.Prism.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
+- uid: Dock.Model.Prism.Core.DockableBase.CanDockAsDocument*
+  name: CanDockAsDocument
+  href: api/Dock.Model.Prism.Core.DockableBase.html#Dock_Model_Prism_Core_DockableBase_CanDockAsDocument_
+  commentId: Overload:Dock.Model.Prism.Core.DockableBase.CanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.Prism.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
 - uid: Dock.Model.Prism.Core.DockableBase.CanDrag
   name: CanDrag
   href: api/Dock.Model.Prism.Core.DockableBase.html#Dock_Model_Prism_Core_DockableBase_CanDrag
@@ -34849,6 +35006,19 @@ references:
   isSpec: "True"
   fullName: Dock.Model.ReactiveProperty.Core.DockableBase.CanClose
   nameWithType: DockableBase.CanClose
+- uid: Dock.Model.ReactiveProperty.Core.DockableBase.CanDockAsDocument
+  name: CanDockAsDocument
+  href: api/Dock.Model.ReactiveProperty.Core.DockableBase.html#Dock_Model_ReactiveProperty_Core_DockableBase_CanDockAsDocument
+  commentId: P:Dock.Model.ReactiveProperty.Core.DockableBase.CanDockAsDocument
+  fullName: Dock.Model.ReactiveProperty.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
+- uid: Dock.Model.ReactiveProperty.Core.DockableBase.CanDockAsDocument*
+  name: CanDockAsDocument
+  href: api/Dock.Model.ReactiveProperty.Core.DockableBase.html#Dock_Model_ReactiveProperty_Core_DockableBase_CanDockAsDocument_
+  commentId: Overload:Dock.Model.ReactiveProperty.Core.DockableBase.CanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.ReactiveProperty.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
 - uid: Dock.Model.ReactiveProperty.Core.DockableBase.CanDrag
   name: CanDrag
   href: api/Dock.Model.ReactiveProperty.Core.DockableBase.html#Dock_Model_ReactiveProperty_Core_DockableBase_CanDrag
@@ -37431,6 +37601,19 @@ references:
   isSpec: "True"
   fullName: Dock.Model.ReactiveUI.Core.DockableBase.CanClose
   nameWithType: DockableBase.CanClose
+- uid: Dock.Model.ReactiveUI.Core.DockableBase.CanDockAsDocument
+  name: CanDockAsDocument
+  href: api/Dock.Model.ReactiveUI.Core.DockableBase.html#Dock_Model_ReactiveUI_Core_DockableBase_CanDockAsDocument
+  commentId: P:Dock.Model.ReactiveUI.Core.DockableBase.CanDockAsDocument
+  fullName: Dock.Model.ReactiveUI.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
+- uid: Dock.Model.ReactiveUI.Core.DockableBase.CanDockAsDocument*
+  name: CanDockAsDocument
+  href: api/Dock.Model.ReactiveUI.Core.DockableBase.html#Dock_Model_ReactiveUI_Core_DockableBase_CanDockAsDocument_
+  commentId: Overload:Dock.Model.ReactiveUI.Core.DockableBase.CanDockAsDocument
+  isSpec: "True"
+  fullName: Dock.Model.ReactiveUI.Core.DockableBase.CanDockAsDocument
+  nameWithType: DockableBase.CanDockAsDocument
 - uid: Dock.Model.ReactiveUI.Core.DockableBase.CanDrag
   name: CanDrag
   href: api/Dock.Model.ReactiveUI.Core.DockableBase.html#Dock_Model_ReactiveUI_Core_DockableBase_CanDrag
@@ -42045,6 +42228,22 @@ references:
   isSpec: "True"
   fullName: Dock.Settings.AppBuilderExtensions.EnableWindowMagnetism
   nameWithType: AppBuilderExtensions.EnableWindowMagnetism
+- uid: Dock.Settings.AppBuilderExtensions.SetDragPreviewOpacity(Avalonia.AppBuilder,System.Double)
+  name: SetDragPreviewOpacity(AppBuilder, double)
+  href: api/Dock.Settings.AppBuilderExtensions.html#Dock_Settings_AppBuilderExtensions_SetDragPreviewOpacity_Avalonia_AppBuilder_System_Double_
+  commentId: M:Dock.Settings.AppBuilderExtensions.SetDragPreviewOpacity(Avalonia.AppBuilder,System.Double)
+  name.vb: SetDragPreviewOpacity(AppBuilder, Double)
+  fullName: Dock.Settings.AppBuilderExtensions.SetDragPreviewOpacity(Avalonia.AppBuilder, double)
+  fullName.vb: Dock.Settings.AppBuilderExtensions.SetDragPreviewOpacity(Avalonia.AppBuilder, Double)
+  nameWithType: AppBuilderExtensions.SetDragPreviewOpacity(AppBuilder, double)
+  nameWithType.vb: AppBuilderExtensions.SetDragPreviewOpacity(AppBuilder, Double)
+- uid: Dock.Settings.AppBuilderExtensions.SetDragPreviewOpacity*
+  name: SetDragPreviewOpacity
+  href: api/Dock.Settings.AppBuilderExtensions.html#Dock_Settings_AppBuilderExtensions_SetDragPreviewOpacity_
+  commentId: Overload:Dock.Settings.AppBuilderExtensions.SetDragPreviewOpacity
+  isSpec: "True"
+  fullName: Dock.Settings.AppBuilderExtensions.SetDragPreviewOpacity
+  nameWithType: AppBuilderExtensions.SetDragPreviewOpacity
 - uid: Dock.Settings.AppBuilderExtensions.SetWindowMagnetDistance(Avalonia.AppBuilder,System.Double)
   name: SetWindowMagnetDistance(AppBuilder, double)
   href: api/Dock.Settings.AppBuilderExtensions.html#Dock_Settings_AppBuilderExtensions_SetWindowMagnetDistance_Avalonia_AppBuilder_System_Double_
@@ -42061,6 +42260,22 @@ references:
   isSpec: "True"
   fullName: Dock.Settings.AppBuilderExtensions.SetWindowMagnetDistance
   nameWithType: AppBuilderExtensions.SetWindowMagnetDistance
+- uid: Dock.Settings.AppBuilderExtensions.ShowDockablePreviewOnDrag(Avalonia.AppBuilder,System.Boolean)
+  name: ShowDockablePreviewOnDrag(AppBuilder, bool)
+  href: api/Dock.Settings.AppBuilderExtensions.html#Dock_Settings_AppBuilderExtensions_ShowDockablePreviewOnDrag_Avalonia_AppBuilder_System_Boolean_
+  commentId: M:Dock.Settings.AppBuilderExtensions.ShowDockablePreviewOnDrag(Avalonia.AppBuilder,System.Boolean)
+  name.vb: ShowDockablePreviewOnDrag(AppBuilder, Boolean)
+  fullName: Dock.Settings.AppBuilderExtensions.ShowDockablePreviewOnDrag(Avalonia.AppBuilder, bool)
+  fullName.vb: Dock.Settings.AppBuilderExtensions.ShowDockablePreviewOnDrag(Avalonia.AppBuilder, Boolean)
+  nameWithType: AppBuilderExtensions.ShowDockablePreviewOnDrag(AppBuilder, bool)
+  nameWithType.vb: AppBuilderExtensions.ShowDockablePreviewOnDrag(AppBuilder, Boolean)
+- uid: Dock.Settings.AppBuilderExtensions.ShowDockablePreviewOnDrag*
+  name: ShowDockablePreviewOnDrag
+  href: api/Dock.Settings.AppBuilderExtensions.html#Dock_Settings_AppBuilderExtensions_ShowDockablePreviewOnDrag_
+  commentId: Overload:Dock.Settings.AppBuilderExtensions.ShowDockablePreviewOnDrag
+  isSpec: "True"
+  fullName: Dock.Settings.AppBuilderExtensions.ShowDockablePreviewOnDrag
+  nameWithType: AppBuilderExtensions.ShowDockablePreviewOnDrag
 - uid: Dock.Settings.AppBuilderExtensions.UseFloatingDockAdorner(Avalonia.AppBuilder,System.Boolean)
   name: UseFloatingDockAdorner(AppBuilder, bool)
   href: api/Dock.Settings.AppBuilderExtensions.html#Dock_Settings_AppBuilderExtensions_UseFloatingDockAdorner_Avalonia_AppBuilder_System_Boolean_
@@ -42556,6 +42771,12 @@ references:
   isSpec: "True"
   fullName: Dock.Settings.DockSettings.DocumentSelectorKeyGesture
   nameWithType: DockSettings.DocumentSelectorKeyGesture
+- uid: Dock.Settings.DockSettings.DragPreviewOpacity
+  name: DragPreviewOpacity
+  href: api/Dock.Settings.DockSettings.html#Dock_Settings_DockSettings_DragPreviewOpacity
+  commentId: F:Dock.Settings.DockSettings.DragPreviewOpacity
+  fullName: Dock.Settings.DockSettings.DragPreviewOpacity
+  nameWithType: DockSettings.DragPreviewOpacity
 - uid: Dock.Settings.DockSettings.EnableDiagnosticsLogging
   name: EnableDiagnosticsLogging
   href: api/Dock.Settings.DockSettings.html#Dock_Settings_DockSettings_EnableDiagnosticsLogging
@@ -42618,6 +42839,12 @@ references:
   isSpec: "True"
   fullName: Dock.Settings.DockSettings.SelectorEnabled
   nameWithType: DockSettings.SelectorEnabled
+- uid: Dock.Settings.DockSettings.ShowDockablePreviewOnDrag
+  name: ShowDockablePreviewOnDrag
+  href: api/Dock.Settings.DockSettings.html#Dock_Settings_DockSettings_ShowDockablePreviewOnDrag
+  commentId: F:Dock.Settings.DockSettings.ShowDockablePreviewOnDrag
+  fullName: Dock.Settings.DockSettings.ShowDockablePreviewOnDrag
+  nameWithType: DockSettings.ShowDockablePreviewOnDrag
 - uid: Dock.Settings.DockSettings.ToolSelectorKeyGesture
   name: ToolSelectorKeyGesture
   href: api/Dock.Settings.DockSettings.html#Dock_Settings_DockSettings_ToolSelectorKeyGesture
@@ -42713,6 +42940,19 @@ references:
   isSpec: "True"
   fullName: Dock.Settings.DockSettingsOptions.DocumentSelectorKeyGesture
   nameWithType: DockSettingsOptions.DocumentSelectorKeyGesture
+- uid: Dock.Settings.DockSettingsOptions.DragPreviewOpacity
+  name: DragPreviewOpacity
+  href: api/Dock.Settings.DockSettingsOptions.html#Dock_Settings_DockSettingsOptions_DragPreviewOpacity
+  commentId: P:Dock.Settings.DockSettingsOptions.DragPreviewOpacity
+  fullName: Dock.Settings.DockSettingsOptions.DragPreviewOpacity
+  nameWithType: DockSettingsOptions.DragPreviewOpacity
+- uid: Dock.Settings.DockSettingsOptions.DragPreviewOpacity*
+  name: DragPreviewOpacity
+  href: api/Dock.Settings.DockSettingsOptions.html#Dock_Settings_DockSettingsOptions_DragPreviewOpacity_
+  commentId: Overload:Dock.Settings.DockSettingsOptions.DragPreviewOpacity
+  isSpec: "True"
+  fullName: Dock.Settings.DockSettingsOptions.DragPreviewOpacity
+  nameWithType: DockSettingsOptions.DragPreviewOpacity
 - uid: Dock.Settings.DockSettingsOptions.EnableWindowMagnetism
   name: EnableWindowMagnetism
   href: api/Dock.Settings.DockSettingsOptions.html#Dock_Settings_DockSettingsOptions_EnableWindowMagnetism
@@ -42765,6 +43005,19 @@ references:
   isSpec: "True"
   fullName: Dock.Settings.DockSettingsOptions.SelectorEnabled
   nameWithType: DockSettingsOptions.SelectorEnabled
+- uid: Dock.Settings.DockSettingsOptions.ShowDockablePreviewOnDrag
+  name: ShowDockablePreviewOnDrag
+  href: api/Dock.Settings.DockSettingsOptions.html#Dock_Settings_DockSettingsOptions_ShowDockablePreviewOnDrag
+  commentId: P:Dock.Settings.DockSettingsOptions.ShowDockablePreviewOnDrag
+  fullName: Dock.Settings.DockSettingsOptions.ShowDockablePreviewOnDrag
+  nameWithType: DockSettingsOptions.ShowDockablePreviewOnDrag
+- uid: Dock.Settings.DockSettingsOptions.ShowDockablePreviewOnDrag*
+  name: ShowDockablePreviewOnDrag
+  href: api/Dock.Settings.DockSettingsOptions.html#Dock_Settings_DockSettingsOptions_ShowDockablePreviewOnDrag_
+  commentId: Overload:Dock.Settings.DockSettingsOptions.ShowDockablePreviewOnDrag
+  isSpec: "True"
+  fullName: Dock.Settings.DockSettingsOptions.ShowDockablePreviewOnDrag
+  nameWithType: DockSettingsOptions.ShowDockablePreviewOnDrag
 - uid: Dock.Settings.DockSettingsOptions.ToolSelectorKeyGesture
   name: ToolSelectorKeyGesture
   href: api/Dock.Settings.DockSettingsOptions.html#Dock_Settings_DockSettingsOptions_ToolSelectorKeyGesture
