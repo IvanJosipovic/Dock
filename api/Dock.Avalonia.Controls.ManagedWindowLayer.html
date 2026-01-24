@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DragPreviewControl | Dock for Avalonia </title>
+      <title>Class ManagedWindowLayer | Dock for Avalonia </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DragPreviewControl | Dock for Avalonia ">
+      <meta name="title" content="Class ManagedWindowLayer | Dock for Avalonia ">
       
-      <meta name="description" content="A control used as drag preview showing dock status.">
+      <meta name="description" content="Managed window layer hosting floating windows inside the main visual tree.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/IvanJosipovic/Dock/new/master/apiSpec/new?filename=Dock_Avalonia_Controls_DragPreviewControl.md&amp;value=---%0Auid%3A%20Dock.Avalonia.Controls.DragPreviewControl%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/IvanJosipovic/Dock/new/master/apiSpec/new?filename=Dock_Avalonia_Controls_ManagedWindowLayer.md&amp;value=---%0Auid%3A%20Dock.Avalonia.Controls.ManagedWindowLayer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Dock.Avalonia.Controls.DragPreviewControl">
+        <article data-uid="Dock.Avalonia.Controls.ManagedWindowLayer">
 
 
 
-  <h1 id="Dock_Avalonia_Controls_DragPreviewControl" data-uid="Dock.Avalonia.Controls.DragPreviewControl" class="text-break">
-Class DragPreviewControl  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Dock_Avalonia_Controls_ManagedWindowLayer" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer" class="text-break">
+Class ManagedWindowLayer  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,12 +93,13 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>Dock.Avalonia.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A control used as drag preview showing dock status.</p>
+  <div class="markdown summary"><p>Managed window layer hosting floating windows inside the main visual tree.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DragPreviewControl : TemplatedControl, INotifyPropertyChanged, IDataContextProvider, ILogical, IThemeVariantHost, IResourceHost, IResourceNode, IStyleHost, ISetLogicalParent, ISetInheritanceParent, ISupportInitialize, IStyleable, INamed, IInputElement, IDataTemplateHost, ISetterValue</code></pre>
+    <pre><code class="lang-csharp hljs">[TemplatePart(&quot;PART_OverlayCanvas&quot;, typeof(Canvas))]
+public sealed class ManagedWindowLayer : TemplatedControl, INotifyPropertyChanged, IDataContextProvider, ILogical, IThemeVariantHost, IResourceHost, IResourceNode, IStyleHost, ISetLogicalParent, ISetInheritanceParent, ISupportInitialize, IStyleable, INamed, IInputElement, IDataTemplateHost, ISetterValue</code></pre>
   </div>
 
 
@@ -117,7 +118,7 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <div><span class="xref">InputElement</span></div>
       <div><span class="xref">Control</span></div>
       <div><span class="xref">TemplatedControl</span></div>
-      <div><span class="xref">DragPreviewControl</span></div>
+      <div><span class="xref">ManagedWindowLayer</span></div>
     </dd>
   </dl>
 
@@ -204,21 +205,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <span class="xref">TemplatedControl.ApplyTemplate()</span>
     </div>
     <div>
-      <span class="xref">TemplatedControl.GetTemplateFocusTarget()</span>
-    </div>
-    <div>
-      <span class="xref">TemplatedControl.OnAttachedToLogicalTree(LogicalTreeAttachmentEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">TemplatedControl.OnDetachedFromLogicalTree(LogicalTreeAttachmentEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">TemplatedControl.OnApplyTemplate(TemplateAppliedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">TemplatedControl.OnTemplateChanged(AvaloniaPropertyChangedEventArgs)</span>
-    </div>
-    <div>
       <span class="xref">TemplatedControl.Background</span>
     </div>
     <div>
@@ -289,39 +275,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <span class="xref">Control.SizeChangedEvent</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnLoaded(RoutedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnUnloaded(RoutedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnSizeChanged(SizeChangedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnAttachedToVisualTreeCore(VisualTreeAttachmentEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnDetachedFromVisualTreeCore(VisualTreeAttachmentEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnGotFocus(GotFocusEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnLostFocus(RoutedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnCreateAutomationPeer()</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnPointerReleased(PointerReleasedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnKeyUp(KeyEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Control.OnPropertyChanged(AvaloniaPropertyChangedEventArgs)</span>
     </div>
     <div>
       <span class="xref">Control.FocusAdorner</span>
@@ -435,36 +388,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <span class="xref">InputElement.Focus(NavigationMethod, KeyModifiers)</span>
     </div>
     <div>
-      <span class="xref">InputElement.OnAccessKey(RoutedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.OnKeyDown(KeyEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.OnTextInput(TextInputEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.OnPointerEntered(PointerEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.OnPointerExited(PointerEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.OnPointerMoved(PointerEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.OnPointerPressed(PointerPressedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.OnPointerCaptureLost(PointerCaptureLostEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.OnPointerWheelChanged(PointerWheelEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.UpdateIsEffectivelyEnabled()</span>
-    </div>
-    <div>
       <span class="xref">InputElement.Focusable</span>
     </div>
     <div>
@@ -496,9 +419,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <span class="xref">InputElement.KeyBindings</span>
-    </div>
-    <div>
-      <span class="xref">InputElement.IsEnabledCore</span>
     </div>
     <div>
       <span class="xref">InputElement.GestureRecognizers</span>
@@ -567,9 +487,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <span class="xref">Interactive.RaiseEvent(RoutedEventArgs)</span>
     </div>
     <div>
-      <span class="xref">Interactive.BuildEventRoute(RoutedEvent)</span>
-    </div>
-    <div>
       <span class="xref">Layoutable.DesiredSizeProperty</span>
     </div>
     <div>
@@ -616,30 +533,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <span class="xref">Layoutable.InvalidateArrange()</span>
-    </div>
-    <div>
-      <span class="xref">Layoutable.AffectsMeasure&lt;T&gt;(params AvaloniaProperty[])</span>
-    </div>
-    <div>
-      <span class="xref">Layoutable.AffectsArrange&lt;T&gt;(params AvaloniaProperty[])</span>
-    </div>
-    <div>
-      <span class="xref">Layoutable.MeasureCore(Size)</span>
-    </div>
-    <div>
-      <span class="xref">Layoutable.MeasureOverride(Size)</span>
-    </div>
-    <div>
-      <span class="xref">Layoutable.ArrangeCore(Rect)</span>
-    </div>
-    <div>
-      <span class="xref">Layoutable.ArrangeOverride(Size)</span>
-    </div>
-    <div>
-      <span class="xref">Layoutable.OnMeasureInvalidated()</span>
-    </div>
-    <div>
-      <span class="xref">Layoutable.OnVisualParentChanged(Visual, Visual)</span>
     </div>
     <div>
       <span class="xref">Layoutable.Width</span>
@@ -738,21 +631,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <span class="xref">Visual.Render(DrawingContext)</span>
     </div>
     <div>
-      <span class="xref">Visual.AffectsRender&lt;T&gt;(params AvaloniaProperty[])</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Visual.LogicalChildrenCollectionChanged(object, NotifyCollectionChangedEventArgs)</a>
-    </div>
-    <div>
-      <span class="xref">Visual.OnAttachedToVisualTree(VisualTreeAttachmentEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Visual.OnDetachedFromVisualTree(VisualTreeAttachmentEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">Visual.InvalidateMirrorTransform()</span>
-    </div>
-    <div>
       <span class="xref">Visual.Bounds</span>
     </div>
     <div>
@@ -792,15 +670,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <span class="xref">Visual.ZIndex</span>
     </div>
     <div>
-      <span class="xref">Visual.VisualChildren</span>
-    </div>
-    <div>
-      <span class="xref">Visual.VisualRoot</span>
-    </div>
-    <div>
-      <span class="xref">Visual.BypassFlowDirectionPolicies</span>
-    </div>
-    <div>
       <span class="xref">Visual.AttachedToVisualTree</span>
     </div>
     <div>
@@ -831,22 +700,7 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <span class="xref">StyledElement.ApplyStyling()</span>
     </div>
     <div>
-      <span class="xref">StyledElement.InitializeIfNeeded()</span>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">StyledElement.TryGetResource(object, ThemeVariant, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">StyledElement.OnDataContextChanged(EventArgs)</a>
-    </div>
-    <div>
-      <span class="xref">StyledElement.OnDataContextBeginUpdate()</span>
-    </div>
-    <div>
-      <span class="xref">StyledElement.OnDataContextEndUpdate()</span>
-    </div>
-    <div>
-      <span class="xref">StyledElement.OnInitialized()</span>
     </div>
     <div>
       <span class="xref">StyledElement.Name</span>
@@ -876,15 +730,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <span class="xref">StyledElement.Theme</span>
     </div>
     <div>
-      <span class="xref">StyledElement.LogicalChildren</span>
-    </div>
-    <div>
-      <span class="xref">StyledElement.PseudoClasses</span>
-    </div>
-    <div>
-      <span class="xref">StyledElement.StyleKeyOverride</span>
-    </div>
-    <div>
       <span class="xref">StyledElement.Parent</span>
     </div>
     <div>
@@ -910,9 +755,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <span class="xref">Animatable.TransitionsProperty</span>
-    </div>
-    <div>
-      <span class="xref">Animatable.OnPropertyChangedCore(AvaloniaPropertyChangedEventArgs)</span>
     </div>
     <div>
       <span class="xref">Animatable.Transitions</span>
@@ -1002,18 +844,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <span class="xref">AvaloniaObject.CoerceValue(AvaloniaProperty)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">AvaloniaObject.UpdateDataValidation(AvaloniaProperty, BindingValueType, Exception)</a>
-    </div>
-    <div>
-      <span class="xref">AvaloniaObject.RaisePropertyChanged&lt;T&gt;(DirectPropertyBase&lt;T&gt;, T, T)</span>
-    </div>
-    <div>
-      <span class="xref">AvaloniaObject.SetAndRaise&lt;T&gt;(DirectPropertyBase&lt;T&gt;, ref T, T)</span>
-    </div>
-    <div>
-      <span class="xref">AvaloniaObject.InheritanceParent</span>
-    </div>
-    <div>
       <span class="xref">AvaloniaObject.this[AvaloniaProperty]</span>
     </div>
     <div>
@@ -1029,9 +859,6 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -1044,53 +871,22 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
 
 
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="Dock_Avalonia_Controls_DragPreviewControl__ctor_" data-uid="Dock.Avalonia.Controls.DragPreviewControl.#ctor*"></a>
-
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl__ctor" data-uid="Dock.Avalonia.Controls.DragPreviewControl.#ctor">
-  DragPreviewControl()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L63"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Dock.Avalonia.Controls.DragPreviewControl.html">DragPreviewControl</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DragPreviewControl()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="fields">Fields
 </h2>
 
 
 
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_ContentTemplateProperty" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ContentTemplateProperty">
-  ContentTemplateProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_DockProperty" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.DockProperty">
+  DockProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Define the <a class="xref" href="Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_ContentTemplate">ContentTemplate</a> property.</p>
+  <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Avalonia.Controls.ManagedWindowLayer.html#Dock_Avalonia_Controls_ManagedWindowLayer_Dock">Dock</a> property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;IDataTemplate&gt; ContentTemplateProperty</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;IDock?&gt; DockProperty</code></pre>
   </div>
 
 
@@ -1098,7 +894,7 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">StyledProperty</span>&lt;<span class="xref">IDataTemplate</span>&gt;</dt>
+    <dt><span class="xref">StyledProperty</span>&lt;<a class="xref" href="Dock.Model.Core.IDock.html">IDock</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -1111,17 +907,17 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
 
 
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_ControlRecyclingProperty" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ControlRecyclingProperty">
-  ControlRecyclingProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_LayoutManagerProperty" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.LayoutManagerProperty">
+  LayoutManagerProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Defines <a class="xref" href="Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_ControlRecycling">ControlRecycling</a> property.</p>
+  <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Dock.Avalonia.Controls.ManagedWindowLayer.html#Dock_Avalonia_Controls_ManagedWindowLayer_LayoutManager">LayoutManager</a> property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;IControlRecycling?&gt; ControlRecyclingProperty</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;IMdiLayoutManager?&gt; LayoutManagerProperty</code></pre>
   </div>
 
 
@@ -1129,162 +925,7 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">StyledProperty</span>&lt;<a class="xref" href="Avalonia.Controls.Recycling.Model.IControlRecycling.html">IControlRecycling</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContentHeightProperty" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeightProperty">
-  PreviewContentHeightProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Defines <a class="xref" href="Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContentHeight">PreviewContentHeight</a> property.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;double&gt; PreviewContentHeightProperty</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">StyledProperty</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContentProperty" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContentProperty">
-  PreviewContentProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L57"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Defines <a class="xref" href="Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContent">PreviewContent</a> property.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;Control?&gt; PreviewContentProperty</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">StyledProperty</span>&lt;<span class="xref">Control</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContentWidthProperty" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidthProperty">
-  PreviewContentWidthProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L39"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Defines <a class="xref" href="Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_PreviewContentWidth">PreviewContentWidth</a> property.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;double&gt; PreviewContentWidthProperty</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">StyledProperty</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_ShowContentProperty" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ShowContentProperty">
-  ShowContentProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L33"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Defines <a class="xref" href="Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_ShowContent">ShowContent</a> property.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;bool&gt; ShowContentProperty</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">StyledProperty</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_StatusProperty" data-uid="Dock.Avalonia.Controls.DragPreviewControl.StatusProperty">
-  StatusProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L27"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Defines <a class="xref" href="Dock.Avalonia.Controls.DragPreviewControl.html#Dock_Avalonia_Controls_DragPreviewControl_Status">Status</a> property.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly StyledProperty&lt;string&gt; StatusProperty</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">StyledProperty</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><span class="xref">StyledProperty</span>&lt;<a class="xref" href="Dock.Avalonia.Mdi.IMdiLayoutManager.html">IMdiLayoutManager</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -1300,19 +941,19 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 </h2>
 
 
-  <a id="Dock_Avalonia_Controls_DragPreviewControl_ContentTemplate_" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ContentTemplate*"></a>
+  <a id="Dock_Avalonia_Controls_ManagedWindowLayer_Dock_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.Dock*"></a>
 
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_ContentTemplate" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ContentTemplate">
-  ContentTemplate
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_Dock" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.Dock">
+  Dock
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets tab header template.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the dock that owns managed windows.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDataTemplate ContentTemplate { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IDock? Dock { get; set; }</code></pre>
   </div>
 
 
@@ -1321,7 +962,7 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">IDataTemplate</span></dt>
+    <dt><a class="xref" href="Dock.Model.Core.IDock.html">IDock</a></dt>
     <dd></dd>
   </dl>
 
@@ -1332,19 +973,19 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Dock_Avalonia_Controls_DragPreviewControl_ControlRecycling_" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ControlRecycling*"></a>
+  <a id="Dock_Avalonia_Controls_ManagedWindowLayer_LayoutManager_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.LayoutManager*"></a>
 
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_ControlRecycling" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ControlRecycling">
-  ControlRecycling
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_LayoutManager" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.LayoutManager">
+  LayoutManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the control recycling instance for preview content.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the layout manager used for MDI layout.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IControlRecycling? ControlRecycling { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IMdiLayoutManager? LayoutManager { get; set; }</code></pre>
   </div>
 
 
@@ -1353,7 +994,7 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Avalonia.Controls.Recycling.Model.IControlRecycling.html">IControlRecycling</a></dt>
+    <dt><a class="xref" href="Dock.Avalonia.Mdi.IMdiLayoutManager.html">IMdiLayoutManager</a></dt>
     <dd></dd>
   </dl>
 
@@ -1364,28 +1005,28 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContent_" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContent*"></a>
+  <h2 class="section" id="methods">Methods
+</h2>
 
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContent" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContent">
-  PreviewContent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L125"><i class="bi bi-code-slash"></i></a>
+
+  <a id="Dock_Avalonia_Controls_ManagedWindowLayer_HideOverlay_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.HideOverlay*"></a>
+
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_HideOverlay_System_String_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.HideOverlay(System.String)">
+  HideOverlay(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the managed preview content.</p>
+  <div class="markdown level1 summary"><p>Removes an overlay element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Control? PreviewContent { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public void HideOverlay(string key)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><span class="xref">Control</span></dt>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -1396,28 +1037,103 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContentHeight_" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeight*"></a>
 
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContentHeight" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContentHeight">
-  PreviewContentHeight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L107"><i class="bi bi-code-slash"></i></a>
+
+
+
+  <a id="Dock_Avalonia_Controls_ManagedWindowLayer_OnApplyTemplate_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.OnApplyTemplate*"></a>
+
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_OnApplyTemplate_Avalonia_Controls_Primitives_TemplateAppliedEventArgs_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.OnApplyTemplate(Avalonia.Controls.Primitives.TemplateAppliedEventArgs)">
+  OnApplyTemplate(TemplateAppliedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the preview content height.</p>
+  <div class="markdown level1 summary"><p>Called when the control's template is applied.
+In simple terms, this means the method is called just before the control is displayed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double PreviewContentHeight { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void OnApplyTemplate(TemplateAppliedEventArgs e)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><code>e</code> <span class="xref">TemplateAppliedEventArgs</span></dt>
+    <dd><p>The event args.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dock_Avalonia_Controls_ManagedWindowLayer_OnPropertyChanged_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.OnPropertyChanged*"></a>
+
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_OnPropertyChanged_Avalonia_AvaloniaPropertyChangedEventArgs_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.OnPropertyChanged(Avalonia.AvaloniaPropertyChangedEventArgs)">
+  OnPropertyChanged(AvaloniaPropertyChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a avalonia property changes on the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs change)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>change</code> <span class="xref">AvaloniaPropertyChangedEventArgs</span></dt>
+    <dd><p>The property change details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dock_Avalonia_Controls_ManagedWindowLayer_ShowOverlay_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.ShowOverlay*"></a>
+
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_ShowOverlay_System_String_Avalonia_Controls_Control_Avalonia_Point_System_Nullable_Avalonia_Size__System_Boolean_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.ShowOverlay(System.String,Avalonia.Controls.Control,Avalonia.Point,System.Nullable{Avalonia.Size},System.Boolean)">
+  ShowOverlay(string, Control, Point, Size?, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows or updates an overlay element at the given position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowOverlay(string key, Control control, Point position, Size? size, bool hitTestVisible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>control</code> <span class="xref">Control</span></dt>
+    <dd></dd>
+    <dt><code>position</code> <span class="xref">Point</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">Size</span>?</dt>
+    <dd></dd>
+    <dt><code>hitTestVisible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -1428,28 +1144,34 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContentWidth_" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidth*"></a>
 
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_PreviewContentWidth" data-uid="Dock.Avalonia.Controls.DragPreviewControl.PreviewContentWidth">
-  PreviewContentWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L98"><i class="bi bi-code-slash"></i></a>
+
+
+
+  <a id="Dock_Avalonia_Controls_ManagedWindowLayer_ShowOverlay_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.ShowOverlay*"></a>
+
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_ShowOverlay_System_String_Avalonia_Controls_Control_Avalonia_Rect_System_Boolean_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.ShowOverlay(System.String,Avalonia.Controls.Control,Avalonia.Rect,System.Boolean)">
+  ShowOverlay(string, Control, Rect, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the preview content width.</p>
+  <div class="markdown level1 summary"><p>Shows or updates an overlay element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double PreviewContentWidth { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public void ShowOverlay(string key, Control control, Rect bounds, bool hitTestVisible)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>control</code> <span class="xref">Control</span></dt>
+    <dd></dd>
+    <dt><code>bounds</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+    <dt><code>hitTestVisible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -1460,62 +1182,39 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Dock_Avalonia_Controls_DragPreviewControl_ShowContent_" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ShowContent*"></a>
 
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_ShowContent" data-uid="Dock.Avalonia.Controls.DragPreviewControl.ShowContent">
-  ShowContent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L89"><i class="bi bi-code-slash"></i></a>
+
+
+
+  <a id="Dock_Avalonia_Controls_ManagedWindowLayer_TryGetLayer_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.TryGetLayer*"></a>
+
+  <h3 id="Dock_Avalonia_Controls_ManagedWindowLayer_TryGetLayer_Avalonia_Visual_" data-uid="Dock.Avalonia.Controls.ManagedWindowLayer.TryGetLayer(Avalonia.Visual)">
+  TryGetLayer(Visual)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets whether the dockable content is shown.</p>
+  <div class="markdown level1 summary"><p>Attempts to locate the managed window layer for a visual.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ShowContent { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static ManagedWindowLayer? TryGetLayer(Visual visual)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>visual</code> <span class="xref">Visual</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dock.Avalonia.Controls.ManagedWindowLayer.html">ManagedWindowLayer</a></dt>
     <dd></dd>
   </dl>
 
 
 
-
-
-
-
-
-  <a id="Dock_Avalonia_Controls_DragPreviewControl_Status_" data-uid="Dock.Avalonia.Controls.DragPreviewControl.Status*"></a>
-
-  <h3 id="Dock_Avalonia_Controls_DragPreviewControl_Status" data-uid="Dock.Avalonia.Controls.DragPreviewControl.Status">
-  Status
-  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L80"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the preview status.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Status { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -1528,7 +1227,7 @@ Class DragPreviewControl  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/DragPreviewControl.axaml.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Avalonia/Controls/ManagedWindowLayer.cs/#L21" class="edit-link">Edit this page</a>
         </div>
 
 

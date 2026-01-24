@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Floating window owner | Dock for Avalonia </title>
+      <title>Managed Windows How-To | Dock for Avalonia </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Floating window owner | Dock for Avalonia ">
+      <meta name="title" content="Managed Windows How-To | Dock for Avalonia ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/dock-window-owner.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/dock-managed-windows-howto.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -81,26 +81,57 @@
         </div>
 
         <article data-uid="">
-<h1 id="floating-window-owner">Floating window owner</h1>
+<h1 id="managed-windows-how-to">Managed Windows How-To</h1>
 
-<p><code>DockSettings</code> exposes an option to make floating windows owned by the main window so they stay in front.</p>
-<pre><code class="lang-csharp">// Keep floating windows above the main window
-DockSettings.UseOwnerForFloatingWindows = true;
+<p>This guide walks through enabling managed windows and wiring the managed window layer into your layout.</p>
+<h2 id="enable-managed-windows">Enable managed windows</h2>
+<p>Set the global flag before creating layouts:</p>
+<pre><code class="lang-csharp">using Dock.Settings;
+
+DockSettings.UseManagedWindows = true;
 </code></pre>
-<pre><code class="lang-csharp">// Via the app builder
-using Dock.Settings;
+<p>Or configure it via <code>AppBuilder</code>:</p>
+<pre><code class="lang-csharp">using Dock.Settings;
 
 AppBuilder.Configure&lt;App&gt;()
     .UsePlatformDetect()
-    .UseOwnerForFloatingWindows();
+    .UseManagedWindows();
 </code></pre>
-<p>When enabled Dock sets the main window as the owner for floating windows, preventing them from appearing behind it. Disable this if you want windows to be independent.</p>
-<p>Managed windows do not use OS-level owners, so this setting applies to native floating windows only.</p>
+<h2 id="ensure-the-managed-layer-is-present">Ensure the managed layer is present</h2>
+<p>The built-in Dock themes include a <code>ManagedWindowLayer</code> in the <code>DockControl</code> template. If you provide a custom template, keep the part and name it <code>PART_ManagedWindowLayer</code>.</p>
+<pre><code class="lang-xml">&lt;controls:DockControl EnableManagedWindowLayer=&quot;True&quot; /&gt;
+</code></pre>
+<p>Custom template snippet:</p>
+<pre><code class="lang-xml">&lt;controls:ManagedWindowLayer x:Name=&quot;PART_ManagedWindowLayer&quot;
+                             IsVisible=&quot;False&quot; /&gt;
+</code></pre>
+<p>If you disable <code>EnableManagedWindowLayer</code>, managed floating windows will not appear.</p>
+<h2 id="provide-a-managed-host-window-optional">Provide a managed host window (optional)</h2>
+<p>If you override host window creation, return <code>ManagedHostWindow</code> when managed windows are enabled:</p>
+<pre><code class="lang-csharp">dockControl.HostWindowFactory = () =&gt; new ManagedHostWindow();
+</code></pre>
+<p>You can also supply a factory mapping through <code>IFactory.HostWindowLocator</code> or <code>IFactory.DefaultHostWindowLocator</code>.</p>
+<h2 id="customize-managed-window-layout">Customize managed window layout</h2>
+<p><code>ManagedWindowLayer</code> uses <code>ClassicMdiLayoutManager</code> by default. You can swap it with your own implementation:</p>
+<pre><code class="lang-csharp">managedWindowLayer.LayoutManager = new MyMdiLayoutManager();
+</code></pre>
+<h2 id="drag-preview-and-overlays">Drag preview and overlays</h2>
+<p>Drag previews and dock adorners are rendered inside the managed layer:</p>
+<pre><code class="lang-csharp">DockSettings.ShowDockablePreviewOnDrag = true;
+DockSettings.DragPreviewOpacity = 0.7;
+</code></pre>
+<p>When dragging a managed floating window, the window itself moves so no preview overlay is shown.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li>Floating windows do not appear: verify <code>DockSettings.UseManagedWindows</code> is <code>true</code> and <code>EnableManagedWindowLayer</code> is enabled.</li>
+<li>Custom templates: ensure <code>PART_ManagedWindowLayer</code> exists in the <code>DockControl</code> template.</li>
+<li>Custom host window factory: return <code>ManagedHostWindow</code> when managed mode is enabled.</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/dock-window-owner.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/dock-managed-windows-howto.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
