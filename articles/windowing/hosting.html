@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Floating window owner | Dock for Avalonia </title>
+      <title>Host Modes (Managed vs Native) | Dock for Avalonia </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Floating window owner | Dock for Avalonia ">
+      <meta name="title" content="Host Modes (Managed vs Native) | Dock for Avalonia ">
       
       
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/dock-window-owner.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/windowing/hosting.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,64 +81,31 @@
         </div>
 
         <article data-uid="">
-<h1 id="floating-window-owner">Floating window owner</h1>
+<h1 id="host-modes-managed-vs-native">Host Modes (Managed vs Native)</h1>
 
-<p><code>DockSettings</code> exposes options to make floating windows owned by the main window so they stay in front. This is the default when <code>IDockWindow.OwnerMode</code> is <code>DockWindowOwnerMode.Default</code>.</p>
-<pre><code class="lang-csharp">// Keep floating windows above the main window
-DockSettings.UseOwnerForFloatingWindows = true;
+<p>Dock can host floating windows as native OS windows or as managed in-app windows.</p>
+<h2 id="host-mode-resolution">Host Mode Resolution</h2>
+<p>The effective host mode is resolved in order:</p>
+<ol>
+<li><code>IRootDock.FloatingWindowHostMode</code> (if not <code>Default</code>).</li>
+<li><code>DockSettings.FloatingWindowHostMode</code> (if not <code>Default</code>).</li>
+<li><code>DockSettings.UseManagedWindows</code> (legacy default).</li>
+</ol>
+<p><code>Managed</code> uses <code>ManagedHostWindow</code> (in-app). <code>Native</code> uses <code>HostWindow</code> (OS window).</p>
+<h2 id="per-root-override">Per-Root Override</h2>
+<p>Use <code>IRootDock.FloatingWindowHostMode</code> to override host mode for a specific root dock.</p>
+<pre><code class="lang-csharp">root.FloatingWindowHostMode = DockFloatingWindowHostMode.Managed;
 </code></pre>
-<pre><code class="lang-csharp">// Via the app builder
-using Dock.Settings;
-
-AppBuilder.Configure&lt;App&gt;()
-    .UsePlatformDetect()
-    .UseOwnerForFloatingWindows();
+<h2 id="global-setting">Global Setting</h2>
+<pre><code class="lang-csharp">DockSettings.FloatingWindowHostMode = DockFloatingWindowHostMode.Native;
 </code></pre>
-<p>When enabled Dock sets the main window as the owner for floating windows, preventing them from appearing behind it. Disable this if you want windows to be independent.</p>
-<h2 id="global-owner-policy">Global owner policy</h2>
-<p>Use <code>DockSettings.FloatingWindowOwnerPolicy</code> to explicitly control global ownership behavior. When set to <code>Default</code>, Dock falls back to <code>UseOwnerForFloatingWindows</code> for backward compatibility.</p>
-<pre><code class="lang-csharp">DockSettings.FloatingWindowOwnerPolicy = DockFloatingWindowOwnerPolicy.NeverOwned;
-</code></pre>
-<h2 id="per-window-ownership">Per-window ownership</h2>
-<p>Use <code>DockWindowOwnerMode</code> and <code>ParentWindow</code> to explicitly control ownership for a specific window. This overrides the global setting.</p>
-<pre><code class="lang-csharp">var options = new DockWindowOptions
-{
-    OwnerMode = DockWindowOwnerMode.ParentWindow,
-    ParentWindow = root.Window
-};
-
-factory.FloatDockable(tool, options);
-</code></pre>
-<p>To force a floating window to have no owner even when <code>UseOwnerForFloatingWindows</code> is enabled:</p>
-<pre><code class="lang-csharp">var options = new DockWindowOptions
-{
-    OwnerMode = DockWindowOwnerMode.None
-};
-
-factory.FloatDockable(tool, options);
-</code></pre>
-<p>To always use the root window as the owner:</p>
-<pre><code class="lang-csharp">var options = new DockWindowOptions
-{
-    OwnerMode = DockWindowOwnerMode.RootWindow
-};
-
-factory.FloatDockable(tool, options);
-</code></pre>
-<p>To use the window that currently hosts the dockable being floated:</p>
-<pre><code class="lang-csharp">var options = new DockWindowOptions
-{
-    OwnerMode = DockWindowOwnerMode.DockableWindow
-};
-
-factory.FloatDockable(tool, options);
-</code></pre>
-<p>Managed windows do not use OS-level owners, so this setting applies to native floating windows only.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p><code>DockSettings.UseManagedWindows</code> remains supported and is used when both the root and global host mode are <code>Default</code>.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/dock-window-owner.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/windowing/hosting.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

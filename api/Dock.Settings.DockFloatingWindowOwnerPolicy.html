@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Floating window owner | Dock for Avalonia </title>
+      <title>Enum DockFloatingWindowOwnerPolicy | Dock for Avalonia </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Floating window owner | Dock for Avalonia ">
+      <meta name="title" content="Enum DockFloatingWindowOwnerPolicy | Dock for Avalonia ">
       
-      
+      <meta name="description" content="Defines the global owner policy for floating windows.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/dock-window-owner.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/IvanJosipovic/Dock/new/master/apiSpec/new?filename=Dock_Settings_DockFloatingWindowOwnerPolicy.md&amp;value=---%0Auid%3A%20Dock.Settings.DockFloatingWindowOwnerPolicy%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -80,68 +80,61 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
-<h1 id="floating-window-owner">Floating window owner</h1>
+        <article data-uid="Dock.Settings.DockFloatingWindowOwnerPolicy">
 
-<p><code>DockSettings</code> exposes options to make floating windows owned by the main window so they stay in front. This is the default when <code>IDockWindow.OwnerMode</code> is <code>DockWindowOwnerMode.Default</code>.</p>
-<pre><code class="lang-csharp">// Keep floating windows above the main window
-DockSettings.UseOwnerForFloatingWindows = true;
-</code></pre>
-<pre><code class="lang-csharp">// Via the app builder
-using Dock.Settings;
 
-AppBuilder.Configure&lt;App&gt;()
-    .UsePlatformDetect()
-    .UseOwnerForFloatingWindows();
-</code></pre>
-<p>When enabled Dock sets the main window as the owner for floating windows, preventing them from appearing behind it. Disable this if you want windows to be independent.</p>
-<h2 id="global-owner-policy">Global owner policy</h2>
-<p>Use <code>DockSettings.FloatingWindowOwnerPolicy</code> to explicitly control global ownership behavior. When set to <code>Default</code>, Dock falls back to <code>UseOwnerForFloatingWindows</code> for backward compatibility.</p>
-<pre><code class="lang-csharp">DockSettings.FloatingWindowOwnerPolicy = DockFloatingWindowOwnerPolicy.NeverOwned;
-</code></pre>
-<h2 id="per-window-ownership">Per-window ownership</h2>
-<p>Use <code>DockWindowOwnerMode</code> and <code>ParentWindow</code> to explicitly control ownership for a specific window. This overrides the global setting.</p>
-<pre><code class="lang-csharp">var options = new DockWindowOptions
-{
-    OwnerMode = DockWindowOwnerMode.ParentWindow,
-    ParentWindow = root.Window
-};
 
-factory.FloatDockable(tool, options);
-</code></pre>
-<p>To force a floating window to have no owner even when <code>UseOwnerForFloatingWindows</code> is enabled:</p>
-<pre><code class="lang-csharp">var options = new DockWindowOptions
-{
-    OwnerMode = DockWindowOwnerMode.None
-};
 
-factory.FloatDockable(tool, options);
-</code></pre>
-<p>To always use the root window as the owner:</p>
-<pre><code class="lang-csharp">var options = new DockWindowOptions
-{
-    OwnerMode = DockWindowOwnerMode.RootWindow
-};
+  <h1 id="Dock_Settings_DockFloatingWindowOwnerPolicy" data-uid="Dock.Settings.DockFloatingWindowOwnerPolicy" class="text-break">
+Enum DockFloatingWindowOwnerPolicy  <a class="header-action link-secondary" title="View source" href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Settings/DockFloatingWindowOwnerPolicy.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
 
-factory.FloatDockable(tool, options);
-</code></pre>
-<p>To use the window that currently hosts the dockable being floated:</p>
-<pre><code class="lang-csharp">var options = new DockWindowOptions
-{
-    OwnerMode = DockWindowOwnerMode.DockableWindow
-};
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Dock.html">Dock</a>.<a class="xref" href="Dock.Settings.html">Settings</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Dock.Settings.dll</dd></dl>
+  </div>
 
-factory.FloatDockable(tool, options);
-</code></pre>
-<p>Managed windows do not use OS-level owners, so this setting applies to native floating windows only.</p>
+  <div class="markdown summary"><p>Defines the global owner policy for floating windows.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum DockFloatingWindowOwnerPolicy</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="Dock_Settings_DockFloatingWindowOwnerPolicy_AlwaysOwned"><code>AlwaysOwned = 1</code></dt>
+  
+  <dd><p>Always assign an owner for floating windows when possible.</p>
+</dd>
+    <dt id="Dock_Settings_DockFloatingWindowOwnerPolicy_Default"><code>Default = 0</code></dt>
+  
+  <dd><p>Use <a class="xref" href="Dock.Settings.DockSettings.html#Dock_Settings_DockSettings_UseOwnerForFloatingWindows">UseOwnerForFloatingWindows</a> to decide ownership.</p>
+</dd>
+    <dt id="Dock_Settings_DockFloatingWindowOwnerPolicy_NeverOwned"><code>NeverOwned = 2</code></dt>
+  
+  <dd><p>Never assign an owner for floating windows.</p>
+</dd>
+  </dl>
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/IvanJosipovic/Dock/blob/master/docfx/articles/dock-window-owner.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/IvanJosipovic/Dock/blob/master/src/Dock.Settings/DockFloatingWindowOwnerPolicy.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
-        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 
