@@ -95,7 +95,7 @@
 <tbody>
 <tr>
 <td><code>IDockable</code></td>
-<td>Base interface for items that can be shown in a dock. Provides <code>Id</code>, <code>Title</code>, <code>Context</code>, optional size limits and lifecycle methods like <code>OnClose</code>.</td>
+<td>Base interface for items that can be shown in a dock. Provides <code>Id</code>, <code>Title</code>, <code>Context</code>, <code>DockingState</code>, optional size limits and lifecycle methods like <code>OnClose</code>.</td>
 </tr>
 <tr>
 <td><code>IDock</code></td>
@@ -172,6 +172,14 @@ pointer coordinates relative to the dock control.</li>
 </ul>
 <p>These values are consulted when calculating drop targets or restoring a layout
 from a saved state.</p>
+<h2 id="docking-state-flags">Docking state flags</h2>
+<p><code>IDockable.DockingState</code> tracks logical placement using <code>DockingWindowState</code> flags:</p>
+<ul>
+<li><code>Docked</code>, <code>Pinned</code>, or <code>Document</code> describe primary location.</li>
+<li><code>Floating</code> is added when the dockable is hosted in a floating window.</li>
+<li><code>Hidden</code> is added when the dockable is moved to <code>IRootDock.HiddenDockables</code>.</li>
+</ul>
+<p>Common combinations include <code>Docked | Floating</code>, <code>Pinned | Floating</code>, and <code>Document | Floating | Hidden</code>.</p>
 <h2 id="document-dock-options">Document dock options</h2>
 <p><code>IDocumentDock</code> exposes several key properties for controlling its behavior:</p>
 <ul>
@@ -179,6 +187,7 @@ from a saved state.</p>
 <li><code>TabsLayout</code> chooses where the tabs appear using the <code>DocumentTabLayout</code> enum</li>
 <li><code>LayoutMode</code> switches between <code>Tabbed</code> and <code>Mdi</code> layouts</li>
 <li><code>CloseButtonShowMode</code> controls when document close buttons appear</li>
+<li><code>EmptyContent</code> defines placeholder content shown when a tabbed or MDI document host has no visible dockables</li>
 <li><code>CanCreateDocument</code> and <code>CreateDocument</code> control the new-document command</li>
 <li><code>CascadeDocuments</code>, <code>TileDocumentsHorizontal</code>, <code>TileDocumentsVertical</code>, and <code>RestoreDocuments</code> are MDI helpers</li>
 </ul>
@@ -334,9 +343,9 @@ the window so styles can react to different chrome configurations.</p>
 <h2 id="tab-header-and-mdi-template-properties">Tab header and MDI template properties</h2>
 <p>Dock exposes template properties for tab headers and MDI windows:</p>
 <ul>
-<li><code>DocumentControl</code>: <code>IconTemplate</code>, <code>HeaderTemplate</code>, <code>ModifiedTemplate</code>, <code>CloseTemplate</code>, <code>CloseButtonTheme</code>, <code>IsActive</code>, <code>TabsLayout</code>.</li>
+<li><code>DocumentControl</code>: <code>IconTemplate</code>, <code>HeaderTemplate</code>, <code>ModifiedTemplate</code>, <code>CloseTemplate</code>, <code>EmptyContentTemplate</code>, <code>CloseButtonTheme</code>, <code>IsActive</code>, <code>TabsLayout</code>, <code>HasVisibleDockables</code>.</li>
 <li><code>ToolControl</code>: <code>IconTemplate</code>, <code>HeaderTemplate</code>, <code>ModifiedTemplate</code>.</li>
-<li><code>MdiDocumentControl</code>: <code>IconTemplate</code>, <code>HeaderTemplate</code>, <code>ModifiedTemplate</code>, <code>CloseTemplate</code>, <code>CloseButtonTheme</code>, <code>LayoutManager</code>, <code>IsActive</code>.</li>
+<li><code>MdiDocumentControl</code>: <code>IconTemplate</code>, <code>HeaderTemplate</code>, <code>ModifiedTemplate</code>, <code>CloseTemplate</code>, <code>EmptyContentTemplate</code>, <code>CloseButtonTheme</code>, <code>LayoutManager</code>, <code>IsActive</code>, <code>HasVisibleDocuments</code>.</li>
 <li><code>MdiDocumentWindow</code>: <code>IconTemplate</code>, <code>HeaderTemplate</code>, <code>ModifiedTemplate</code>, <code>CloseTemplate</code>, <code>CloseButtonTheme</code>, <code>DocumentContextMenu</code>, <code>IsActive</code>, <code>MdiState</code>.</li>
 </ul>
 <p>Use these to customize headers, icons, and modified indicators in styles or templates. See <a href="dock-styling.html">Styling and theming</a> and <a href="dock-mdi.html">MDI document layout</a> for details.</p>
